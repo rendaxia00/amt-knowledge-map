@@ -23,9 +23,9 @@
         <span class="brand-mark">A</span><span><b>AMT</b><small>AUCTION ATLAS</small></span>
       </a>
       <nav class="rail-nav">
-        <button class="nav-item active" data-view="map" aria-pressed="true"><span class="nav-icon">⌖</span><span>知识地图</span></button>
-        <button class="nav-item" data-view="chapters" aria-pressed="false"><span class="nav-icon">≡</span><span>章节索引</span></button>
-        <button class="nav-item" data-view="glossary" aria-pressed="false"><span class="nav-icon">Aa</span><span>术语表</span></button>
+        <button class="nav-item active" data-view="map" aria-pressed="true"><span class="nav-icon icon-map" aria-hidden="true"></span><span>知识地图</span></button>
+        <button class="nav-item" data-view="chapters" aria-pressed="false"><span class="nav-icon icon-list" aria-hidden="true"></span><span>章节索引</span></button>
+        <button class="nav-item" data-view="glossary" aria-pressed="false"><span class="nav-icon icon-term" aria-hidden="true"></span><span>术语表</span></button>
       </nav>
       <div class="source-meta">
         <div><strong id="lessonCount">38</strong><span>课程章节</span></div>
@@ -82,8 +82,8 @@
         <div class="reader-topline">
           <div class="breadcrumb" id="breadcrumb"></div>
           <div class="reader-nav">
-            <button class="icon-button" id="prevChapter" aria-label="上一章">←</button>
-            <button class="icon-button" id="nextChapter" aria-label="下一章">→</button>
+            <button class="chapter-nav-button" id="prevChapter">上一章</button>
+            <button class="chapter-nav-button" id="nextChapter">下一章</button>
           </div>
         </div>
         <div id="readerContent"></div>

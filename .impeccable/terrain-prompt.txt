@@ -1,0 +1,9 @@
+Use case: stylized-concept
+Asset type: seamless website background plate for a Chinese AMT learning-map interface
+Primary request: Create a wide 16:9 dark cartographic terrain plate viewed straight-on, designed to sit behind an interactive route map. The plate should feel like a premium engraved night atlas: layered mountain ridges, river valleys, a distant coastline, clustered pine landmarks, faint contour lines, survey coordinates, one subtle compass rose and a small distance scale. Five visually distinct territories should flow diagonally from upper left to lower right, but leave clear dark negative space for UI labels and clickable lesson nodes.
+Style/medium: finely engraved topographic field atlas, precise editorial cartography, tactile black paper and mineral ink; production UI background, not fantasy game art.
+Composition/framing: 16:9 landscape, all five territories visible in one frame; densest terrain at edges and between territories, central paths remain readable.
+Color palette: near-black green #0C0F0E, graphite #28312D, warm bone #D9D1C1, restrained mineral teal #56C9BB, amber #F4B24B, burnt orange #FF7A3C, cool blue #82C8E6 used only as sparse survey accents.
+Materials/textures: fine contour etching, soft paper grain, mountain hatch lines, tiny vegetation and coast marks, no photographic realism.
+Text: none. Do not render words, numbers, letters, legends, labels, logos, or watermark.
+Constraints: no UI panels, no buttons, no charts, no candlesticks, no neon cyberpunk, no gradients, no glowing fog, no colored blobs. Preserve high contrast dark negative space so HTML labels can be overlaid.

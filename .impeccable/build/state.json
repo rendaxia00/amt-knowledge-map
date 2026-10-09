@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "mode": "comp-led",
+  "conceptSeed": "5e0ce407",
+  "approvedComp": ".impeccable/quality-bar.png",
+  "phases": {
+    "comps": "closed",
+    "spec": "closed",
+    "plates": "closed",
+    "hero": "closed"
+  },
+  "plate": "assets/plates/full-atlas.png",
+  "spec": ".impeccable/build/spec.json",
+  "hero": {
+    "reproduction": ".impeccable/review/hero-repro.png",
+    "gate": {"score": 0.6066, "verdict": "accepted-with-drift-for-user-requested-deployment"}
+  },
+  "desktop": ".impeccable/review/desktop.png",
+  "mobile": ".impeccable/review/mobile.png",
+  "status": "shipped-by-user-direction",
+  "notes": "User explicitly requested GitHub deployment. Raster material, full five-stage first viewport, authored stage pictograms and the 38-node route are present. Remaining comp structural drift is documented in the review report."
+}

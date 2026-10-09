@@ -1,0 +1,218 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-09T08:50:32.0822832+08:00",
+  "title": "Design System: AMT Auction Atlas",
+  "extensions": {
+    "colorMeta": {
+      "survey-ink": {
+        "role": "neutral",
+        "displayName": "Survey Ink",
+        "canonical": "#0b0e0d",
+        "tonalRamp": ["oklch(15% 0.009 160)", "oklch(25% 0.009 160)", "oklch(36% 0.008 160)", "oklch(48% 0.007 160)", "oklch(60% 0.006 160)", "oklch(72% 0.005 160)", "oklch(84% 0.004 160)", "oklch(95% 0.003 160)"]
+      },
+      "raised-ink": {
+        "role": "neutral",
+        "displayName": "Raised Ink",
+        "canonical": "#111614",
+        "tonalRamp": ["oklch(15% 0.012 160)", "oklch(25% 0.011 160)", "oklch(36% 0.010 160)", "oklch(48% 0.009 160)", "oklch(60% 0.008 160)", "oklch(72% 0.006 160)", "oklch(84% 0.004 160)", "oklch(95% 0.002 160)"]
+      },
+      "inset-ink": {
+        "role": "neutral",
+        "displayName": "Inset Ink",
+        "canonical": "#18201d",
+        "tonalRamp": ["oklch(15% 0.015 160)", "oklch(25% 0.014 160)", "oklch(36% 0.013 160)", "oklch(48% 0.011 160)", "oklch(60% 0.009 160)", "oklch(72% 0.007 160)", "oklch(84% 0.004 160)", "oklch(95% 0.002 160)"]
+      },
+      "annotation-bone": {
+        "role": "neutral",
+        "displayName": "Annotation Bone",
+        "canonical": "#eee7d9",
+        "tonalRamp": ["oklch(15% 0.018 80)", "oklch(25% 0.020 80)", "oklch(36% 0.022 80)", "oklch(48% 0.024 80)", "oklch(60% 0.026 80)", "oklch(72% 0.028 80)", "oklch(84% 0.030 80)", "oklch(95% 0.030 80)"]
+      },
+      "muted-bone": {
+        "role": "neutral",
+        "displayName": "Muted Bone",
+        "canonical": "#aba79d",
+        "tonalRamp": ["oklch(15% 0.012 80)", "oklch(25% 0.014 80)", "oklch(36% 0.016 80)", "oklch(48% 0.018 80)", "oklch(60% 0.020 80)", "oklch(72% 0.022 80)", "oklch(84% 0.024 80)", "oklch(95% 0.024 80)"]
+      },
+      "faint-bone": {
+        "role": "neutral",
+        "displayName": "Faint Bone",
+        "canonical": "#858b84",
+        "tonalRamp": ["oklch(15% 0.008 150)", "oklch(25% 0.009 150)", "oklch(36% 0.010 150)", "oklch(48% 0.011 150)", "oklch(60% 0.012 150)", "oklch(72% 0.013 150)", "oklch(84% 0.014 150)", "oklch(95% 0.014 150)"]
+      },
+      "execution-amber": {
+        "role": "primary",
+        "displayName": "Execution Amber",
+        "canonical": "#f4b24b",
+        "tonalRamp": ["oklch(15% 0.065 75)", "oklch(25% 0.090 75)", "oklch(36% 0.120 75)", "oklch(48% 0.150 75)", "oklch(60% 0.170 75)", "oklch(72% 0.155 75)", "oklch(84% 0.105 75)", "oklch(95% 0.040 75)"]
+      },
+      "active-amber": {
+        "role": "primary",
+        "displayName": "Active Amber",
+        "canonical": "#ffc865",
+        "tonalRamp": ["oklch(15% 0.065 80)", "oklch(25% 0.090 80)", "oklch(36% 0.120 80)", "oklch(48% 0.150 80)", "oklch(60% 0.170 80)", "oklch(72% 0.155 80)", "oklch(84% 0.105 80)", "oklch(95% 0.040 80)"]
+      },
+      "context-teal": {
+        "role": "secondary",
+        "displayName": "Context Teal",
+        "canonical": "#56c9bb",
+        "tonalRamp": ["oklch(15% 0.045 185)", "oklch(25% 0.065 185)", "oklch(36% 0.085 185)", "oklch(48% 0.105 185)", "oklch(60% 0.120 185)", "oklch(72% 0.105 185)", "oklch(84% 0.070 185)", "oklch(95% 0.025 185)"]
+      },
+      "risk-blue": {
+        "role": "tertiary",
+        "displayName": "Risk Blue",
+        "canonical": "#82c8e6",
+        "tonalRamp": ["oklch(15% 0.040 225)", "oklch(25% 0.060 225)", "oklch(36% 0.080 225)", "oklch(48% 0.095 225)", "oklch(60% 0.105 225)", "oklch(72% 0.090 225)", "oklch(84% 0.060 225)", "oklch(95% 0.025 225)"]
+      },
+      "derived-orange": {
+        "role": "tertiary",
+        "displayName": "Derived Orange",
+        "canonical": "#ff7a3c",
+        "tonalRamp": ["oklch(15% 0.075 45)", "oklch(25% 0.105 45)", "oklch(36% 0.145 45)", "oklch(48% 0.180 45)", "oklch(60% 0.205 45)", "oklch(72% 0.180 45)", "oklch(84% 0.120 45)", "oklch(95% 0.045 45)"]
+      },
+      "survey-line": {
+        "role": "neutral",
+        "displayName": "Survey Line",
+        "canonical": "rgba(238, 231, 217, .14)",
+        "tonalRamp": ["rgba(238,231,217,.06)", "rgba(238,231,217,.10)", "rgba(238,231,217,.14)", "rgba(238,231,217,.20)", "rgba(238,231,217,.28)", "rgba(238,231,217,.40)", "rgba(238,231,217,.58)", "rgba(238,231,217,.78)"]
+      },
+      "survey-line-strong": {
+        "role": "neutral",
+        "displayName": "Strong Survey Line",
+        "canonical": "rgba(238, 231, 217, .26)",
+        "tonalRamp": ["rgba(238,231,217,.08)", "rgba(238,231,217,.14)", "rgba(238,231,217,.20)", "rgba(238,231,217,.26)", "rgba(238,231,217,.36)", "rgba(238,231,217,.48)", "rgba(238,231,217,.64)", "rgba(238,231,217,.82)"]
+      },
+      "focus-bone": {
+        "role": "primary",
+        "displayName": "Focus Bone",
+        "canonical": "#fff0a6",
+        "tonalRamp": ["oklch(15% 0.045 95)", "oklch(25% 0.060 95)", "oklch(36% 0.080 95)", "oklch(48% 0.100 95)", "oklch(60% 0.115 95)", "oklch(72% 0.105 95)", "oklch(84% 0.075 95)", "oklch(95% 0.030 95)"]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Atlas Display", "purpose": "Thesis headlines and major cartographic labels." },
+      "headline": { "displayName": "Reader Headline", "purpose": "Lesson titles and index headings." },
+      "body": { "displayName": "Chinese UI Sans", "purpose": "Navigation, explanations, controls, and all dense Chinese copy." },
+      "editorial": { "displayName": "Editorial Serif", "purpose": "Chapter summaries and reading-section headings." },
+      "label": { "displayName": "Survey Label", "purpose": "Coordinates, lesson codes, durations, and compact metadata only." }
+    },
+    "shadows": [
+      { "name": "mobile-drawer", "value": "18px 0 60px rgba(0,0,0,.4)", "purpose": "Separates the off-canvas instrument rail from the single-column workspace." },
+      { "name": "toast-lift", "value": "0 12px 42px rgba(0,0,0,.35)", "purpose": "Lifts transient status feedback above the survey field." }
+    ],
+    "motion": [
+      { "name": "survey-ease", "value": "cubic-bezier(.18,.78,.18,1)", "purpose": "Short node, drawer, and completion-action transitions." },
+      { "name": "terrain-drift", "value": "36s linear infinite alternate", "purpose": "Remote contour drift only; never applied to the reader plane." },
+      { "name": "reduced-motion", "value": ".01ms", "purpose": "Effective transition and animation removal under prefers-reduced-motion." }
+    ],
+    "breakpoints": [
+      { "name": "compressed-shell", "value": "1180px" },
+      { "name": "single-column", "value": "900px" },
+      { "name": "horizontal-atlas", "value": "560px" }
+    ],
+    "assetProvenance": [
+      {
+        "asset": "assets/plates/full-atlas.png",
+        "source": ".impeccable/terrain-prompt.txt",
+        "purpose": "Generated, text-free engraved night-atlas terrain plate behind the interactive route.",
+        "constraints": "HTML owns labels and semantics; do not bake in UI, text, logos, charts, candlesticks, or claims."
+      },
+      {
+        "asset": "assets/SmileySans-Oblique.woff2",
+        "source": "assets/SmileySans-LICENSE",
+        "purpose": "Self-hosted display and cartographic-label typeface."
+      }
+    ],
+    "narrative": {
+      "northStar": "Auction Cartography",
+      "overview": "AMT Auction Atlas is a late-night market cartographer's field book: a near-black plotted terrain with warm bone annotations and sparse mineral inks. It makes the course's causal chain spatial—context, location, trigger, risk, and review are territories on one route—while keeping detailed reading on a visually nearer, motionless plane. The system is precise rather than ornamental. Fine contours, survey bearings, coordinate labels, stage pictograms, and engraved terrain establish a working atlas; each mark must either orient the learner or encode lesson state. The atlas preserves the product truth: 37 subtitle-reviewed lessons and the title-derived chapter 15 are visually distinguishable, and no visual device implies trading performance or certainty.",
+      "keyCharacteristics": [
+        "One continuous plotted route across five learning territories.",
+        "Near-black survey ground, warm bone type, and restrained mineral phase inks.",
+        "Engraved terrain behind the atlas; a quiet, fixed reading sheet in front.",
+        "Stage pictograms, numbered plaques, coordinate nodes, and dashed conceptual bearings.",
+        "Honest source-state marks, keyboard focus, reduced motion, and narrow-screen horizontal map travel."
+      ],
+      "rules": [
+        { "section": "Overview", "name": "Cartography Before Cards", "body": "Express hierarchy with route layers, coordinates, bearings, plaques, and editorial rules; do not default to a dashboard of interchangeable cards." },
+        { "section": "Colors", "name": "Sparse Mineral", "body": "Use a phase ink on coordinates, route segments, stage plaques, status marks, and small headings; large surfaces remain ink or bone." },
+        { "section": "Colors", "name": "Source Honesty", "body": "A title-derived lesson uses Derived Orange with a dashed mark. Never render it with the solid subtitle-reviewed grammar." },
+        { "section": "Typography", "name": "Two-Plane Type", "body": "Smiley Sans names the terrain; the neutral Chinese sans explains and operates it. Do not use the display face for dense paragraphs." },
+        { "section": "Typography", "name": "Instrument Label", "body": "Uppercase English abbreviations and numeric metadata may use the compact monospace label role with tabular figures; preserve Chinese readability everywhere else." },
+        { "section": "Layout", "name": "Persistent Place", "body": "Keep atlas context visible whenever the viewport permits; lesson changes update the reader without a page reload or loss of route position." },
+        { "section": "Layout", "name": "Horizontal Atlas", "body": "On narrow screens, preserve route geometry through horizontal travel. Do not squeeze labels until they collide or replace the map with cards." },
+        { "section": "Elevation & Depth", "name": "Quiet Reader", "body": "Background terrain may drift remotely, but the reading plane must remain still. Under reduced-motion preference, all animation and transition duration collapses to effectively zero." },
+        { "section": "Shapes", "name": "Semantic Circle", "body": "Circular geometry always means a plotted point, stage, or location state; never use it as arbitrary decoration." },
+        { "section": "Shapes", "name": "Plaque", "body": "A stage identity combines a circular line pictogram with a rectangular phase-color name plaque and a compact numeric tab. Keep these elements as one grammar." },
+        { "section": "Components", "name": "One Active Bearing", "body": "Only the selected lesson receives the strongest ring, bright route segment, and related bearings. Competing active treatments weaken orientation." }
+      ],
+      "dos": [
+        "Preserve the visual chain from market context to review as one route.",
+        "Use real phase color and coordinate states to encode meaning.",
+        "Keep the reader text measure quiet and stable while the atlas changes.",
+        "Preserve Chinese copy legibility and English AMT abbreviations.",
+        "Mark chapter 15 as title-derived with the dashed orange grammar.",
+        "Keep focus visible and honor reduced-motion preference.",
+        "Extend the pictogram/plaque/coordinate grammar to future glossary, notes, progress, and quiz surfaces."
+      ],
+      "donts": [
+        "Replace the atlas with a generic card grid or KPI dashboard.",
+        "Add candlestick decoration, neon cyberpunk glow, gradients, colored blobs, or ornamental charts.",
+        "Flood large surfaces with phase colors; mineral inks are notation.",
+        "Bake labels or claims into the terrain image.",
+        "Imply trading outcomes, certainty, or source coverage the product does not have.",
+        "Collapse narrow-screen nodes into unreadable overlaps; keep the horizontal rail.",
+        "Animate the reader, ignore keyboard focus, or rely on motion alone to communicate state."
+      ]
+    }
+  },
+  "components": [
+    {
+      "name": "Search Field",
+      "kind": "input",
+      "refersTo": "search-field",
+      "description": "Square survey input for filtering lessons, terms, and questions.",
+      "html": "<label class=\"ds-search\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><circle cx=\"11\" cy=\"11\" r=\"7\"/><path d=\"m16 16 5 5\"/></svg><input type=\"search\" placeholder=\"搜索章节、术语或问题\"><kbd>/</kbd></label>",
+      "css": ".ds-search{display:flex;align-items:center;gap:10px;width:420px;max-width:100%;padding:10px 12px;border:1px solid var(--line-strong,rgba(238,231,217,.26));background:rgba(238,231,217,.025);color:var(--bone,#eee7d9);font:13px/1.4 'Microsoft YaHei UI','PingFang SC',sans-serif}.ds-search svg{width:18px;height:18px;fill:none;stroke:var(--bone-faint,#858b84);stroke-width:1.7}.ds-search input{min-width:0;flex:1;border:0;outline:0;color:inherit;background:transparent;font:inherit}.ds-search input::placeholder{color:var(--bone-faint,#858b84)}.ds-search kbd{padding:2px 6px;color:var(--bone-faint,#858b84);border:1px solid var(--line,rgba(238,231,217,.14));font:11px/1.4 ui-monospace,monospace}.ds-search:focus-within{outline:2px solid var(--focus,#fff0a6);outline-offset:3px}"
+    },
+    {
+      "name": "Active Rail Navigation",
+      "kind": "nav",
+      "refersTo": "navigation-item-active",
+      "description": "Instrument-rail destination with an amber bearing and line pictogram.",
+      "html": "<button class=\"ds-nav\" aria-pressed=\"true\"><span class=\"ds-nav-icon\" aria-hidden=\"true\"><i></i></span><span>知识地图</span></button>",
+      "css": ".ds-nav{position:relative;display:flex;align-items:center;gap:12px;width:210px;padding:12px 10px;border:0;background:transparent;color:var(--amber-bright,#ffc865);font:13px/1.3 'Microsoft YaHei UI','PingFang SC',sans-serif;text-align:left;cursor:pointer}.ds-nav::before{content:'';position:absolute;left:-18px;width:3px;height:28px;background:var(--amber,#f4b24b)}.ds-nav-icon{position:relative;width:24px;height:24px}.ds-nav-icon::before,.ds-nav-icon::after{content:'';position:absolute;border:1px solid currentColor;border-radius:50%}.ds-nav-icon::before{inset:4px}.ds-nav-icon::after{inset:9px;background:currentColor}.ds-nav:hover{background:rgba(238,231,217,.04)}.ds-nav:focus-visible{outline:2px solid var(--focus,#fff0a6);outline-offset:3px}"
+    },
+    {
+      "name": "Active Coordinate Node",
+      "kind": "custom",
+      "refersTo": "coordinate-node",
+      "description": "Foregrounded lesson coordinate with phase ring, lesson code, and compact tag.",
+      "html": "<button class=\"ds-node\"><span class=\"ds-node-core\"></span><span class=\"ds-node-code\">12</span><span class=\"ds-node-title\">价值迁移</span></button>",
+      "css": ".ds-node{--ds-phase:var(--teal,#56c9bb);display:grid;justify-items:center;width:88px;padding:8px;border:0;background:transparent;color:var(--bone,#eee7d9);font-family:'Microsoft YaHei UI','PingFang SC',sans-serif;text-align:center;cursor:pointer}.ds-node-core{width:13px;height:13px;border:2px solid var(--ink,#0b0e0d);border-radius:50%;background:var(--ink,#0b0e0d);outline:3px solid var(--ds-phase);outline-offset:3px;transition:transform .2s cubic-bezier(.18,.78,.18,1)}.ds-node-code{margin-top:10px;font:600 11px/1 ui-monospace,monospace}.ds-node-title{margin-top:4px;color:var(--bone,#eee7d9);font-size:11px;line-height:1.3;font-weight:700}.ds-node:hover .ds-node-core{transform:scale(1.2)}.ds-node:focus-visible{outline:2px solid var(--focus,#fff0a6);outline-offset:3px}"
+    },
+    {
+      "name": "Stage Plaque",
+      "kind": "custom",
+      "description": "Combined stage seal, line pictogram, numeric tab, and rectangular phase title.",
+      "html": "<div class=\"ds-stage\"><span class=\"ds-stage-mark\"><svg viewBox=\"0 0 32 32\" aria-hidden=\"true\"><circle cx=\"16\" cy=\"16\" r=\"10\"/><circle cx=\"16\" cy=\"16\" r=\"4\"/><path d=\"M16 3v5M16 24v5M3 16h5M24 16h5\"/></svg><em>02</em></span><div><h3>价值位置</h3><p>把交易限制在高价值位置</p></div></div>",
+      "css": ".ds-stage{--ds-phase:var(--amber,#f4b24b);display:flex;align-items:center;gap:12px;width:240px;color:var(--ds-phase);font-family:'Microsoft YaHei UI','PingFang SC',sans-serif}.ds-stage-mark{position:relative;display:grid;flex:0 0 58px;place-items:center;width:58px;height:58px;border:1px solid var(--ds-phase);border-radius:50%;background:rgba(11,14,13,.9);outline:1px solid color-mix(in srgb,var(--ds-phase) 40%,transparent);outline-offset:4px}.ds-stage-mark svg{width:30px;height:30px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}.ds-stage-mark em{position:absolute;right:-6px;bottom:-3px;padding:2px 4px;color:var(--ink,#0b0e0d);background:var(--ds-phase);font:700 9px/1 ui-monospace,monospace;font-style:normal}.ds-stage h3{display:inline-block;margin:0 0 5px;padding:4px 8px 5px;color:var(--ink,#0b0e0d);background:var(--ds-phase);font:400 20px/1 'Smiley Sans',sans-serif}.ds-stage p{margin:0;color:var(--bone-faint,#858b84);font-size:11px;line-height:1.4}"
+    },
+    {
+      "name": "Knowledge Tag",
+      "kind": "chip",
+      "refersTo": "tag",
+      "description": "Quiet pill for concepts and cross-lesson vocabulary.",
+      "html": "<span class=\"ds-tag\">DVA</span>",
+      "css": ".ds-tag{display:inline-block;padding:5px 9px;border:1px solid var(--line-strong,rgba(238,231,217,.26));border-radius:999px;color:var(--bone-muted,#aba79d);background:transparent;font:11px/1.2 'Microsoft YaHei UI','PingFang SC',sans-serif}.ds-tag:hover{color:var(--bone,#eee7d9);border-color:var(--bone-muted,#aba79d)}"
+    },
+    {
+      "name": "Completion Action",
+      "kind": "button",
+      "refersTo": "completion-action",
+      "description": "Full-width lesson action colored by the current phase.",
+      "html": "<button class=\"ds-complete\">标记本章已完成</button>",
+      "css": ".ds-complete{--ds-phase:var(--amber,#f4b24b);width:100%;padding:13px 16px;border:0;color:var(--ink,#0b0e0d);background:var(--ds-phase);font:700 13px/1.4 'Microsoft YaHei UI','PingFang SC',sans-serif;cursor:pointer;transition:filter .2s,transform .2s cubic-bezier(.18,.78,.18,1)}.ds-complete:hover{filter:brightness(1.12);transform:translateY(-1px)}.ds-complete:active{transform:none}.ds-complete:focus-visible{outline:2px solid var(--focus,#fff0a6);outline-offset:3px}"
+    }
+  ]
+}

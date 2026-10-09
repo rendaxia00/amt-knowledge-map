@@ -25,18 +25,39 @@
 
   function renderMap(filter="") {
     const q = filter.trim().toLowerCase();
-    let visible = 0;
-    phaseMap.innerHTML = phases.map((phase, index) => {
-      const items = chapters.filter(c => c.phase === phase.id && matches(c,q));
-      visible += items.length;
-      if (!items.length) return "";
-      return `<section class="phase" style="--phase:${phase.color}">
-        <div class="phase-label"><span class="phase-index">0${index+1}</span><h2>${phase.name}</h2><p>${phase.desc}</p></div>
-        <div class="phase-route">${items.map(c => `<button class="lesson-node ${c.id===activeId?"active":""} ${c.derived?"derived":""} ${completed.has(c.id)?"completed":""}" data-chapter="${c.id}" title="${escapeHtml(c.title)}">
-          <span class="node-point"></span><span class="node-code">${c.no}</span><span class="node-title">${c.title}</span>
-        </button>`).join("")}</div>
-      </section>`;
-    }).join("");
+    const stageIcon=index=>[
+      '<svg viewBox="0 0 32 32"><path d="M4 24 12 10l5 8 3-5 8 11Z"/><path d="M9 24h14"/></svg>',
+      '<svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="10"/><circle cx="16" cy="16" r="4"/><path d="M16 3v5M16 24v5M3 16h5M24 16h5"/></svg>',
+      '<svg viewBox="0 0 32 32"><path d="M6 25V15h5v10M14 25V8h5v17M22 25V12h5v13M4 25h25"/></svg>',
+      '<svg viewBox="0 0 32 32"><path d="M16 4 26 8v7c0 7-4 11-10 14C10 26 6 22 6 15V8Z"/><path d="m11 16 3 3 7-7"/></svg>',
+      '<svg viewBox="0 0 32 32"><path d="M16 27V14M16 18c-6 0-9-4-9-9 6 0 9 3 9 9ZM16 14c1-6 4-9 10-9 0 6-4 9-10 9Z"/></svg>'
+    ][index];
+    const points=[]; const stageMarks=[]; let y=24;
+    phases.forEach((phase,phaseIndex)=>{
+      const items=chapters.filter(c=>c.phase===phase.id);
+      const cols=7, rows=Math.ceil(items.length/cols), reverse=phaseIndex%2===1;
+      const stageX=reverse?840:55;
+      stageMarks.push({phase,phaseIndex,x:stageX,y:y+8,reverse});
+      items.forEach((c,i)=>{
+        const row=Math.floor(i/cols), col=i%cols;
+        const actualCol=row%2===0?col:Math.min(cols-1,items.length-row*cols-1)-col;
+        const baseX=reverse?760:240, dir=reverse?-1:1;
+        points.push({c,phase,phaseIndex,x:baseX+dir*actualCol*92,y:y+54+row*44,order:points.length});
+      });
+      y+=88+(rows-1)*44;
+    });
+    const height=y+48, activePoint=points.find(p=>p.c.id===activeId), activeIndex=activePoint?.order??0;
+    const segment=(a,b)=>{const dx=Math.max(34,Math.abs(b.x-a.x)*.45);const c1=a.x+(b.x>=a.x?dx:-dx),c2=b.x-(b.x>=a.x?dx:-dx);return `M ${a.x} ${a.y} C ${c1} ${a.y}, ${c2} ${b.y}, ${b.x} ${b.y}`};
+    const paths=[];
+    for(let i=1;i<points.length;i++) paths.push(`<path class="map-route ${points[i].order<=activeIndex?"passed":""}" d="${segment(points[i-1],points[i])}"/>`);
+    const related=(activePoint?.c.related||[]).map(id=>points.find(p=>p.c.id===id)).filter(Boolean).map(p=>`<path class="relation-route" d="${segment(activePoint,p)}"/>`).join("");
+    const visible=points.filter(p=>matches(p.c,q)).length;
+    phaseMap.innerHTML=`<div class="route-field" style="height:${height}px">
+      <div class="coordinate-note north">N<br><span>39.9042°</span></div><div class="coordinate-note east">E 116.4074°</div>
+      <svg class="route-svg" viewBox="0 0 1000 ${height}" preserveAspectRatio="none" aria-hidden="true"><g>${paths.join("")}</g><g>${related}</g></svg>
+      ${stageMarks.map(({phase,phaseIndex,x,y,reverse})=>`<div class="atlas-stage ${reverse?"right":""}" style="--phase:${phase.color};left:${x/10}%;top:${y}px"><span class="stage-mark">${stageIcon(phaseIndex)}<em>0${phaseIndex+1}</em></span><div><h2>${phase.name}</h2><p>${phase.desc}</p></div></div>`).join("")}
+      ${points.map(p=>`<button class="atlas-node ${p.c.id===activeId?"active":""} ${p.c.derived?"derived":""} ${completed.has(p.c.id)?"completed":""} ${q&&!matches(p.c,q)?"filtered-out":""}" style="--phase:${p.phase.color};left:${p.x/10}%;top:${p.y}px" data-chapter="${p.c.id}" title="${escapeHtml(p.c.title)}"><span class="node-core"></span><span class="node-code">${p.c.no}</span><span class="node-title">${p.c.tags[0]}</span></button>`).join("")}
+    </div>`;
     emptyState.hidden = visible > 0 || activeView !== "map";
   }
 
@@ -73,8 +94,8 @@
     document.documentElement.style.setProperty("--active-phase",p.color);
     $("#breadcrumb").innerHTML=`<b style="color:${p.color}">${p.name}</b>　›　${c.no} ${c.title}`;
     readerContent.innerHTML=`<div class="reader-content" style="--phase:${p.color}">
-      <div class="chapter-kicker"><span>LESSON ${c.no}</span><span>·</span><span>${c.duration}</span><span class="status">${c.derived?"TITLE-DERIVED":"EN SUBTITLE REVIEWED"}</span></div>
       <h1 class="chapter-title">${c.title}</h1><p class="chapter-en">${escapeHtml(c.en)}</p>
+      <div class="chapter-meta"><span>LESSON ${c.no}</span><span>${c.duration}</span><span>${c.derived?"TITLE-DERIVED":"EN SUBTITLE REVIEWED"}</span></div>
       <p class="chapter-summary">${c.summary}</p>
       ${c.derived?`<div class="source-warning"><strong>来源说明：</strong>本章目录中只有视频，没有 <code>en.srt</code>；本页内容仅依据标题提炼，不冒充逐字稿总结。</div>`:""}
       <section class="reader-section"><h2>核心知识点</h2>${c.points.map((pt,i)=>`<div class="knowledge-point"><span class="point-index">0${i+1}</span><div><h3>${pt.title}</h3><p>${pt.detail}</p></div></div>`).join("")}</section>

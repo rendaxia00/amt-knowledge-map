@@ -1,5 +1,15 @@
 # Direction Contract — Auction Cartography
 
+<!-- impeccable:concept-seed 5e0ce407 -->
+
+## FORM
+
+- **Topology:** one continuous plotted route connects five learning territories; each lesson is a coordinate on that route, not an isolated index item.
+- **Material:** near-black survey ground, faint topographic contours, hairline coordinate ticks, warm bone annotations, and phase-specific mineral inks.
+- **Composition:** the route bends across a tall field and alternates its stage anchors; the reading plane remains fixed and visually nearer than the drifting terrain.
+- **Interaction:** choosing a coordinate foregrounds the traveled route and draws dashed relationship bearings to the chapter's conceptual neighbors.
+- **Typography:** Smiley Sans is self-hosted for display and cartographic labels; readable UI/body copy uses a neutral Chinese sans stack.
+
 ## World
 
 A late-night market cartographer's field atlas: near-black plotted terrain, warm bone editorial type, mineral teal for value/context, amber for execution, and cool blue for risk. Thin contour lines and coordinate marks create depth without decorative charts.

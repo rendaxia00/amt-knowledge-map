@@ -1,0 +1,107 @@
+{
+  "tool": "comp-spec",
+  "version": 1,
+  "createdAt": "2026-10-09T00:42:48.664Z",
+  "comp": ".\\.impeccable\\quality-bar.png",
+  "warnings": [],
+  "uncoveredInkCells": [],
+  "compSize": {
+    "width": 1672,
+    "height": 941
+  },
+  "aspect": 1.7768,
+  "orientation": "landscape",
+  "palette": [
+    {
+      "hex": "#0a120e",
+      "coverage": 0.9299
+    },
+    {
+      "hex": "#424642",
+      "coverage": 0.0268
+    },
+    {
+      "hex": "#222c1c",
+      "coverage": 0.019
+    },
+    {
+      "hex": "#9c9e9e",
+      "coverage": 0.0128
+    },
+    {
+      "hex": "#6f726e",
+      "coverage": 0.0115
+    }
+  ],
+  "bands": [
+    {
+      "y": 0.0278,
+      "strength": 0.3919
+    },
+    {
+      "y": 0.2917,
+      "strength": 0.3162
+    },
+    {
+      "y": 0.7639,
+      "strength": 0.3083
+    },
+    {
+      "y": 0.9167,
+      "strength": 0.2551
+    },
+    {
+      "y": 0.9722,
+      "strength": 0.3504
+    }
+  ],
+  "regions": [
+    {
+      "id": "full-atlas",
+      "kind": "image",
+      "note": "Full first viewport shell, atlas, route and reader",
+      "grid": "A0:J9",
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 1
+      },
+      "px": {
+        "x": 0,
+        "y": 0,
+        "w": 1672,
+        "h": 941
+      },
+      "aspect": 1.7768,
+      "palette": [
+        {
+          "hex": "#0a120e",
+          "coverage": 0.9299
+        },
+        {
+          "hex": "#424642",
+          "coverage": 0.0268
+        },
+        {
+          "hex": "#222c1c",
+          "coverage": 0.019
+        },
+        {
+          "hex": "#9c9e9e",
+          "coverage": 0.0128
+        },
+        {
+          "hex": "#6f726e",
+          "coverage": 0.0115
+        }
+      ],
+      "detail": {
+        "energy": 27.0352
+      },
+      "medium": "raster",
+      "plate": "assets/plates/full-atlas.png",
+      "text": null
+    }
+  ]
+}
